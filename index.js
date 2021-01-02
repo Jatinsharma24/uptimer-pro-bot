@@ -11,7 +11,7 @@ const fetch = require("node-fetch");
 const db = require("quick.db");
 
 const client = new Discord.Client();
-const prefix = "PREFIX"; // Your bot Prefix
+const prefix = "!"; // Your bot Prefix
 
 setInterval(() => {
   var links = db.get("linkler");
