@@ -1,4 +1,4 @@
-const express = require("express"); 
+const express = require("express");
 const app = express();
 app.listen(() => console.log("Server started"));
 app.use("/ping", res => {
@@ -35,7 +35,11 @@ client.on("ready", () => {
 
 client.on("ready", () => {
   setInterval(() => {
-    client.user.setActivity(`${prefix}uptime 😍`);// check json.sqlite
+    client.user.setActivity(
+      `${prefix}uptime | Uptiming ${db.get("linkler").length} Projects in ${
+        client.guilds.cache.size
+      } Servers`
+    );
   }, 7000);
 });
 
@@ -44,7 +48,7 @@ client.on("message", message => {
   let embed = new Discord.MessageEmbed().setColor("#ffe352");
   if (message.content === prefix + "help") {
     embed.setTitle("Command List :reminder_ribbon:");
-    embed.setDescription("This Bot is made by Cool dude 69 #5158");
+    embed.setDescription("This Bot is made by 🐰 Bunny 🐰#6229");
     embed.addField(
       `${prefix}uptime + Link`,
       [
