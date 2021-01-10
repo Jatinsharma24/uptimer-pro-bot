@@ -36,7 +36,7 @@ db.set("linkler", [])
 
 client.on("ready", () => {
 setInterval(() => {
-  client.user.setActivity(`${prefix}uptime |  ${db.get("linkler").length} Bot / ${client.guilds.cache.size} Servers`)
+  client.user.setActivity(`${prefix}uptime | Uptiming ${db.get("linkler").length} Projects in ${client.guilds.cache.size} Servers`)
 }, 7000);
 });
  
