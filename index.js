@@ -1,4 +1,4 @@
-const express = require("express"); // Holy Frick its uptiming my Bots Too
+const express = require("express"); 
 const app = express();
 app.listen(() => console.log("Server started"));
 app.use("/ping", res => {
